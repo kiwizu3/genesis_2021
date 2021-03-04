@@ -25,6 +25,7 @@ function active($currect_page)
                 <a class="px-2 btn-sm text-dark text-decoration-none <?php active('designs.php'); ?>" href="designs.php">3D Designs</a>
                 <a class="px-2 btn-sm text-dark text-decoration-none <?php active('education.php'); ?>" href="education.php">Get Educated</a>
                 <a class="px-2 btn-sm text-dark text-decoration-none <?php active('studio.php'); ?>" href="studio.php">3D Studio</a>
+                <a class="px-2 btn-sm text-dark text-decoration-none <?php active('cart.php'); ?>" href="cart.php">My Cart</a>
             </nav>
             <a class="btn btn-dark btn-sm rounded-0" href="login.php">Login</a>
         </header>
