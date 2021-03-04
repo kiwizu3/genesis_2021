@@ -101,18 +101,18 @@ include 'bootstrap.php';
                                                 </div>
                                                 <div class="d-flex w-100">
                                                     <div class="d-flex align-items-center shadow border-0 me-2 p-4 w-50">
-                                                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                                                    <div>
-                                                        <h5>Genesis Delivery - $2</h5>
-                                                        <small>within 24 hours from checkout</small>
-                                                    </div>
+                                                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                                                        <div>
+                                                            <h5>Genesis Delivery - $2</h5>
+                                                            <small>within 24 hours from checkout</small>
+                                                        </div>
                                                     </div>
                                                     <div class="d-flex align-items-center shadow border-0 p-4 w-50">
-                                                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                                                    <div>
-                                                        <h5>Vendor Delivery</h5>
-                                                        <small>between 2 -5 working days</small>
-                                                    </div>
+                                                        <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                                                        <div>
+                                                            <h5>Vendor Delivery</h5>
+                                                            <small>between 2 -5 working days</small>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -146,26 +146,99 @@ include 'bootstrap.php';
                             </table>
                         </div>
                         <div class="tab-pane fade" id="step3">
-                            <h4>Review your information</h4>
-                            <div class="mb-3">
-                                <label for="first_name">Required field 1</label>
-                                <input type="text" class="form-control-plaintext" value="Lorem ipsum dolor sit amet">
-                            </div>
-                            <div class="mb-3">
-                                <label for="first_name">Optional field</label>
-                                <input type="text" class="form-control-plaintext" value="Lorem ipsum dolor sit amet">
-                            </div>
-                            <div class="mb-3">
-                                <label for="first_name">Required field 2</label>
-                                <input type="text" class="form-control-plaintext" value="Lorem ipsum dolor sit amet">
-                            </div>
+                            <table width="100%">
+                                <tr>
+                                    <td width="70%" style="vertical-align:top">
+                                        <h4>Payment</h4>
+                                        <div class="p-2 border border-muted me-2">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="p-4">
+                                                        <div class="panel-heading">
+                                                            <h3 class="font-weight-bold">
+                                                                Payment Details
+                                                            </h3>
+                                                            <div class="checkbox float-right">
+                                                                <label>
+                                                                    <input type="checkbox" />
+                                                                    Remember
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my-2">
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <label for="cardNumber">
+                                                                        CARD NUMBER</label>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" required autofocus />
+                                                                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-7 col-md-7">
+                                                                        <div class="form-group">
+                                                                            <label for="expityMonth">
+                                                                                EXPIRY DATE</label>
+                                                                            <div class="d-flex">
+                                                                                <div class="me-2">
+                                                                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                                                                </div>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required />
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xs-5 col-md-5 float-right">
+                                                                        <div class="form-group">
+                                                                            <label for="cvCode">
+                                                                                CV CODE</label>
+                                                                            <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="30%" style="vertical-align:top">
+                                        <h4>Summary</h4>
+                                        <div>
+                                            <h6>Enter Coupon Code</h6>
+                                            <hr />
+                                            <div class="d-flex justify-content-between">
+                                                <p>Subtotal</p>
+                                                <p>$99.00</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Delivery</p>
+                                                <p>$00.00</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Discount</p>
+                                                <p>$00.00</p>
+                                            </div>
+                                            <hr />
+                                            <div class="d-flex justify-content-between">
+                                                <h6>Subtotal</h6>
+                                                <h6>$99.00</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                     <div class="row justify-content-between">
                         <div class="col-auto"><button type="button" class="btn btn-secondary" data-enchanter="previous">Previous</button></div>
                         <div class="col-auto">
                             <button type="button" class="btn btn-primary" data-enchanter="next">Next</button>
-                            <button type="submit" class="btn btn-primary" data-enchanter="finish">Finish</button>
+                            <a href="index.php" class="btn btn-primary" data-enchanter="finish">Finish</a>
                         </div>
                     </div>
                 </form>
