@@ -7,20 +7,6 @@ $style = 'login.css';
 include 'bootstrap.php';
 ?>
 
-<?php 
-
-
-// $quality = 4; 
-// $reliability = 2; 
-// $cooperation = 2; 
-// $overall = 4; 
-
-// $rating = ($quality + $reliability + $cooperation +$overall)/4;
-
-// echo "Rating : "+ $rating;
-
-?>
-
 <body>
     <div class="container-fluid">
         <?php include("navbar.php") ?>

@@ -15,8 +15,8 @@ include 'bootstrap.php';
                 <h2>Turn your ideas into object with Genesis Studio</h2>
                 <p>Genesis Studio gives you access to a range of 3D designers, allowing you to choose from a variety of models and products, all thanks to 3D printing!</p>
                 <div class="d-flex">
-                    <button class="btn btn-success me-2 rounded-0">Buy Custom Design</button>
-                    <button class="btn btn-primary rounded-0">Buy Custom Product</button>
+                    <a class="btn btn-success me-2 rounded-0" href="customDesign.php">Buy Custom Design</A>
+                    <a class="btn btn-primary rounded-0" href="customProduct.php">Buy Custom Product</a>
                 </div>
             </div>
             <div class="col-6 my-auto">
